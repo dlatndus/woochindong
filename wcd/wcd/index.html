@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html,body{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .wrap{
+        padding-top: 9%;
+        background-image: url("./img/Exclude.png"),url("./img/Intersect.png"),url("./img/Ellipse\ 19.png");
+        background-repeat: no-repeat;
+        background-size: 25%,58%,17%;
+        background-position: 0% 170px, 100% 1250px, 100% 1000px;
+    }
+    .title{
+        padding: 0;
+        width: 12%;
+        margin-left: 44%;
+        margin-right: 44%;
+    }
+    img{
+        width: 100%;
+    } 
+    .link_header{
+        height: 43%;
+        border-radius: 30px 30px 0px 0px;
+    }
+    .link_box{
+        padding-top: 10%;
+        text-align: center;
+        height: 47%;
+        background-color: #F6F6F6;
+        border-radius: 0px 0px 30px 30px;
+    }
+    #link_1{
+        background-color: #F2DE68;
+    }
+    #link_2{
+        background-color: #469D73;
+    }
+    #link_3{
+        background-color: #98D994;
+    }
+    .link>div>img{
+        margin-top: 6%;
+        margin-left: 10%;
+        width: 26.25px;
+        height: 24.12px;
+    }
+    .link>div>a{
+        float: right;
+        font-size: 14px;
+        margin-top: 21px;
+        margin-right: 9%;
+        width: 59px;
+        height: 19px;
+        text-decoration: underline;
+    }
+    .link_wrap{
+        height: 130px;
+        width: 60%;
+        margin-left:20%;
+        margin-top: 5%;
+        margin-bottom: 6%;
+    }
+    .link{
+        width: 32.2%;
+        height: 100%;
+        float: left;
+    }
+    #link_center{
+        margin-right: 1.7%;
+        margin-left: 1.7%;
+    }
+    .question{
+        margin-bottom: 20px;
+        width: 100%;
+        height: 62px;
+        border-radius: 30px;
+        padding-top: 37px;
+        padding-right: 4%;
+        padding-left: 50px;
+        background-color: #F8F8F8;
+        overflow: hidden;
+    }
+    .questions{
+        width: 54%;
+        margin-left: 20.2%;
+        margin-top: 6%;
+        padding-bottom: 33%;
+    }
+    .question>button>img{
+        width: 15px;
+    }
+    footer{
+        margin:0;
+        padding: 0;
+        height: 375px;
+        background-image: url("./img/Exclude\ \(2\).png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 100%;
+    }
+    button{
+        border: none;
+        background: none;
+    }
+    .question>button{
+        float: right;
+        margin-top: 3px;
+    }
+    .answer{
+        margin-top: 40px;
+    }
+    a{
+        color: white;
+    }
+    @media screen and (max-width:1023px){
+        .wrap{
+            background-position: 0% 110px, 100% 1020px, 100% 800px;
+        }
+    }
+    @media screen and (max-width:764px){
+        .wrap{
+            background-position: 0% 100px, 100% 920px, 100% 720px;
+        }
+    }
+</style>
+<body>
+    <div class="wrap">
+        <div class="title"><img src="./img/Group 28.png"></div>
+        <div class="link_wrap">
+            <div class="link"><div class="link_header" id="link_1"><img src="./img/Frame.png"><a href="#">바로가기</a></div><div class="link_box">@ Uchin-dong22</div></div>
+            <div class="link" id="link_center"><div class="link_header" id="link_2"><img src="./img/Frame (1).png"><a href="#">바로가기</a></div><div class="link_box">@ Uchin-dong22</div></div>
+            <div class="link"><div class="link_header" id="link_3"><img src="./img/Frame (2).png"><a href="#">바로가기</a></div><div class="link_box">@ Uchin-dong22</div></div>
+        </div>
+        <div class="title"><img src="./img/Group 29.png"></div>
+        <div class="questions">
+            <div class="question"id="drop1" >
+                Q .  우친동은 뭐하는 동아리인가유? 
+                <button onclick="Dropqeustion('drop1')"><img src="./img//Icon material-keyboard-arrow-down (1).png"></button>
+                <div class="answer">
+                A . 완전 재미있는 동아리 입니다. ㅎ ㅎ ㅎ 들어오시면 절대 후 홰 ? 않하쉽니더<br>
+                어느 동아릐 뷰다 더 재미있는 동아리 활동 만들어두릴 생각 완전 있숩니더 
+                </div>
+            </div>
+            <div class="question"id="drop2" >
+                Q .  우친동만의 장점은 무엇인가요? 
+                <button onclick="Dropqeustion('drop2')"><img src="./img//Icon material-keyboard-arrow-down (1).png"></button>
+                <div class="answer">
+                A . 완전 재미있는 동아리 입니다. ㅎ ㅎ ㅎ 들어오시면 절대 후 홰 ? 않하쉽니더<br>
+                어느 동아릐 뷰다 더 재미있는 동아리 활동 만들어두릴 생각 완전 있숩니더 
+                </div>
+            </div>
+            <div class="question" id="drop3">
+                Q .  우친동에선 어떤 활동을 하나요?
+                <button onclick="Dropqeustion('drop3')"><img src="./img//Icon material-keyboard-arrow-down (1).png"></button>
+                <div class="answer">
+                A . 완전 재미있는 동아리 입니다. ㅎ ㅎ ㅎ 들어오시면 절대 후 홰 ? 않하쉽니더<br>
+                어느 동아릐 뷰다 더 재미있는 동아리 활동 만들어두릴 생각 완전 있숩니더 
+                </div>
+                </div>
+            <div class="question" id="drop4">
+                Q .  우친동은 무슨 뜻 인가요? 
+                <button onclick="Dropqeustion('drop4')"><img src="./img//Icon material-keyboard-arrow-down (1).png"></button>
+                <div class="answer">
+                A . 완전 재미있는 동아리 입니다. ㅎ ㅎ ㅎ 들어오시면 절대 후 홰 ? 않하쉽니더<br>
+                어느 동아릐 뷰다 더 재미있는 동아리 활동 만들어두릴 생각 완전 있숩니더 
+                </div>
+            </div>
+            <div class="question" id="drop5">
+                Q .  우친동 지원 방법이 궁급해요~ 
+                <button onclick="Dropqeustion('drop5')"><img src="./img//Icon material-keyboard-arrow-down (1).png"></button>
+                <div class="answer">
+                A . 완전 재미있는 동아리 입니다. ㅎ ㅎ ㅎ 들어오시면 절대 후 홰 ? 않하쉽니더<br>
+                어느 동아릐 뷰다 더 재미있는 동아리 활동 만들어두릴 생각 완전 있숩니더 
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+<script>
+    let cnt=[0,0,0,0,0];
+    let index;
+    function Dropqeustion(thisId){
+        switch(thisId){
+            case "drop1": index=0; break;
+            case "drop2": index=1; break;
+            case "drop3": index=2; break;
+            case "drop4": index=3; break;
+            case "drop5": index=4; break;
+        }
+        if((++cnt[index])%2==0){
+            document.getElementById(thisId).style.height="62px";
+            document.getElementById("question").style.overflow="hidden";
+        }
+        else {
+            document.getElementById(thisId).style.height="150px";
+            document.getElementById("question").style.overflow="none";
+        }
+    }
+</script>
+</html>
